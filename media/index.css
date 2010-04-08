@@ -1,0 +1,328 @@
+html {
+        overflow-y: scroll;
+}
+
+body {
+    background-color: #fff;
+    font-family:      Lucida Grande, Verdana, Sans-serif;
+    font-size:        12px;
+    color:            #000;
+}
+
+#header {
+    margin: 0 auto;
+    width: 960px;
+    height: 220px;
+    margin-top: 40px;
+    color: #FFF;
+}
+
+#headertitle {
+    width: 430px;
+    height: 75px;
+    float: right;
+    text-align: right;
+    margin-top: 90px;
+    background-color: #215586;          
+    -webkit-border-radius: 9px;
+    -moz-border-radius: 9px;
+    border-radius: 9px;
+}
+
+#headerbg {
+    width: 960px;
+    height: 60px;
+    margin-top: -13px;
+    background-color: #215586;          
+    -webkit-border-radius: 9px;
+    -moz-border-radius: 9px;
+    border-radius: 9px;
+    z-index: 20;
+}
+
+#header img {
+    position: relative;
+    float: left;
+    z-index: -10;
+    padding-left: 40px;
+    margin-top: -6px;
+}
+
+#headertitle h1 {
+    font-family: 'Warnock Pro', 'Goudy Old Style', Palatino, 'Book Antiqua', Georgia, serif;
+    font-weight:      normal;
+    font-size:        56px;
+    margin: 0;
+    margin-top: 30px;
+    margin-right: 120px;
+}
+
+#tagline {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+#content  {
+    margin:           0 auto;
+    width: 960px;
+    background-color: #fff;
+    padding:       20px 20px 12px 20px;
+}
+
+hr {background:#ccc;color:#ccc;width:100%;height:2px;margin:2em 0;padding:0;border:none;}
+
+.infobox {
+    margin: 0 auto;
+    margin-bottom: 10px;
+    border: 3px solid #ccc;
+    width: 80%;
+    height: 110px;
+    padding: 20px;
+    -webkit-border-radius: 9px;
+    -moz-border-radius: 9px;
+    border-radius: 9px;
+}
+
+.infobox h2 {
+    font-size: 28px;
+}
+
+.cost { 
+    float: right;
+    font-size: 56px;
+    margin: 0;
+    padding: 0;
+}
+
+.cost:first-letter {
+    color: #2A8E82;
+}
+
+a {
+    color: #069;
+    text-decoration: underline;
+}
+a:hover {
+    color: #900;
+}
+
+p {
+    line-height: 1.55;
+}
+
+
+form {
+    color: #444;
+    font-family: "Lucida Grande", "Lucida Sans Unicode", Lucida, Tahoma, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+/**
+ * this will make sure that floats will be cleared
+ * for example if you use 
+ after checkboxes and radio buttons
+ */
+form br {
+    clear: left;
+}
+
+#errors {
+    padding: 10px; 
+    margin-bottom: 10px;
+    border: 1px solid #c00;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+}
+
+/* --------------------------------------------------------------------------
+    FIELDSET */
+
+fieldset {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border: 1px solid #bbb; 
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+}
+
+legend {
+    font-size: 12px;
+}
+
+/* --------------------------------------------------------------------------
+    LABELS */
+
+label {
+    display: inline;
+    float: left;
+    
+    width: 140px;
+    width: "150px";
+    padding-right: 10px;
+    
+    vertical-align: middle;
+}
+
+/**
+ * use this class in the $config['defaults'] for 'label' in the config file
+ * if you want the text in the label left justified
+ */
+label.left {
+    text-align: left;
+}
+
+/**
+ * 'combine' is used when two labels are combined such as in 'City/Zip'
+ */
+label.left.combine {
+    width: auto;
+    float: left;
+    padding: 0;
+}
+
+/**
+ * use this class in the $config['defaults'] for 'label' in the config file
+ * if you want the text in the label right justified
+ */
+label.right {
+    text-align: right;
+}
+
+label.right.combine {
+    width: auto;
+    float: none;
+    text-align: right;  
+    padding: 0;
+}
+
+/**
+ * use this class in the $config['defaults'] for 'label' in the config file
+ * if you want to display the label avove the field
+ */
+label.top {
+    float: none;
+    padding: 0;
+    width: auto;
+    text-align: left;
+}
+
+/**
+ * this needs to be assigned to all 'checkbox' and 'radio' type elements
+ * (to remove any width and float styles previously set)
+ */
+label.check {
+    float: left;
+    width: auto;
+    padding-left: 6px;
+}
+
+/**
+ * this is where you can style your required labels
+ * don't forget to include this class name in the config file
+ */
+label.required {
+    font-weight: bold;
+}
+
+/* --------------------------------------------------------------------------
+    GENERAL INPUTS */
+
+input, select, textarea, button {
+    font-size: 12px;
+    color: #000;
+    border: 1px solid #666;
+}
+
+input.error, select.error, textarea.error {
+    border: 1px solid #c00;
+}
+
+input[disabled], input[readonly] {
+    color: #808080;
+    background-color: #efefef;
+}
+
+/* --------------------------------------------------------------------------
+    TEXT INPUTS */
+
+input {
+    width: 192px;
+    width: "200px";
+    padding: 4px;
+    margin-bottom: 5px;
+}
+
+/* --------------------------------------------------------------------------
+    CHECKBOX / RADIO INPUTS */
+
+input.check {
+    float: left;
+    width: auto;
+    padding: 0;
+    margin: 0;
+    height: 24px;
+    border: none;
+}
+
+/* --------------------------------------------------------------------------
+    UPLOADS */
+
+input.upload {
+    border: none;
+    background-color: transparent;
+}
+
+/* --------------------------------------------------------------------------
+    IMAGE INPUTS */
+
+input.image {
+    border: 0px;
+    background-color: transparent;
+}
+
+/* --------------------------------------------------------------------------
+    TEXTAREA */
+
+textarea {
+    font-family: "Lucida Grande", "Lucida Sans Unicode", Lucida, Tahoma, Arial, sans-serif; 
+    padding: 2px;
+    width: 296px;
+    width: "300px";
+    height: 150px;
+}
+
+/* --------------------------------------------------------------------------
+    SELECT */
+
+select {
+    padding: 2px;
+    margin-bottom: 4px;
+    background-color: #fff;
+}
+
+optgroup {
+    color: #fff;
+    background-color: #999;
+}
+
+option {
+    color: #000;
+    background-color: #fff;
+}
+
+/* --------------------------------------------------------------------------
+    BUTTONS */
+
+button, .button {
+    width: auto;
+    height: 24px;
+    padding: 1px 5px 1px 5px;
+    margin: 0;
+    color: #fff;
+    background-color: #215586;          
+    border: 1px solid #606060;
+    vertical-align: middle;     
+}
